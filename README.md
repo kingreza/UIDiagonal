@@ -1,2 +1,21 @@
 # UIDiagonal
-A tvOS controller inspired by Hulu's splash screen
+UIDiagonal is a tvOS controller inspired by Hulu's tvOS splash screen. The user can select an item from the UIDiagonal collection using a Siri remote. 
+
+UIDiagonal uses the focus engine to navigate from one cell to another. 
+
+Original Hulu tvOS splash screen:
+![Hulu original spahs screen](https://s3.amazonaws.com/moodpath/files/hulu.jpg)
+
+UIDiagonal Controller implementation:
+
+![UIDiagonal seven items](https://s3.amazonaws.com/moodpath/files/7.gif)
+
+### UIDiagonal automatically resizes depending on the number of cells:
+
+3 items:
+
+![UIDiagonal three items](https://s3.amazonaws.com/moodpath/files/3.gif)
+
+14 items:
+
+![UIDiagonal fourteen items](https://s3.amazonaws.com/moodpath/files/14.gif)
