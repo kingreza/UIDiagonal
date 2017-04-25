@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837405481EAFF78C002FD7D6 /* TVShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837405471EAFF78C002FD7D6 /* TVShowDetailsViewController.swift */; };
 		83A384671EAFBD8000EE429B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A384661EAFBD8000EE429B /* AppDelegate.swift */; };
-		83A384691EAFBD8000EE429B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A384681EAFBD8000EE429B /* ViewController.swift */; };
+		83A384691EAFBD8000EE429B /* DiagonalTVShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A384681EAFBD8000EE429B /* DiagonalTVShowViewController.swift */; };
 		83A3846C1EAFBD8000EE429B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A3846A1EAFBD8000EE429B /* Main.storyboard */; };
 		83A3846E1EAFBD8000EE429B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A3846D1EAFBD8000EE429B /* Assets.xcassets */; };
+		83A384781EAFBDD500EE429B /* UIDigonalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A384771EAFBDD500EE429B /* UIDigonalViewCell.swift */; };
+		83A3847A1EAFBE4C00EE429B /* UIDiagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A384791EAFBE4C00EE429B /* UIDiagonalView.swift */; };
+		83A3847C1EAFBE6300EE429B /* UIDiagonalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3847B1EAFBE6300EE429B /* UIDiagonalDelegate.swift */; };
+		83A3847E1EAFBEE600EE429B /* TVShowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3847D1EAFBEE600EE429B /* TVShowItem.swift */; };
+		83A384801EAFCBFF00EE429B /* DiagonalTVShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3847F1EAFCBFF00EE429B /* DiagonalTVShowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		837405471EAFF78C002FD7D6 /* TVShowDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowDetailsViewController.swift; sourceTree = "<group>"; };
 		83A384631EAFBD8000EE429B /* DiagonalCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiagonalCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A384661EAFBD8000EE429B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83A384681EAFBD8000EE429B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83A384681EAFBD8000EE429B /* DiagonalTVShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalTVShowViewController.swift; sourceTree = "<group>"; };
 		83A3846B1EAFBD8000EE429B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83A3846D1EAFBD8000EE429B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A3846F1EAFBD8000EE429B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A384771EAFBDD500EE429B /* UIDigonalViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDigonalViewCell.swift; sourceTree = "<group>"; };
+		83A384791EAFBE4C00EE429B /* UIDiagonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDiagonalView.swift; sourceTree = "<group>"; };
+		83A3847B1EAFBE6300EE429B /* UIDiagonalDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDiagonalDelegate.swift; sourceTree = "<group>"; };
+		83A3847D1EAFBEE600EE429B /* TVShowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowItem.swift; sourceTree = "<group>"; };
+		83A3847F1EAFCBFF00EE429B /* DiagonalTVShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagonalTVShowCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +64,35 @@
 		83A384651EAFBD8000EE429B /* DiagonalCategory */ = {
 			isa = PBXGroup;
 			children = (
+				83A384751EAFBDA000EE429B /* UIDiagonal */,
 				83A384661EAFBD8000EE429B /* AppDelegate.swift */,
-				83A384681EAFBD8000EE429B /* ViewController.swift */,
+				83A3847F1EAFCBFF00EE429B /* DiagonalTVShowCell.swift */,
+				83A384681EAFBD8000EE429B /* DiagonalTVShowViewController.swift */,
+				83A3847D1EAFBEE600EE429B /* TVShowItem.swift */,
+				837405471EAFF78C002FD7D6 /* TVShowDetailsViewController.swift */,
 				83A3846A1EAFBD8000EE429B /* Main.storyboard */,
 				83A3846D1EAFBD8000EE429B /* Assets.xcassets */,
 				83A3846F1EAFBD8000EE429B /* Info.plist */,
 			);
 			path = DiagonalCategory;
+			sourceTree = "<group>";
+		};
+		83A384751EAFBDA000EE429B /* UIDiagonal */ = {
+			isa = PBXGroup;
+			children = (
+				83A384761EAFBDB600EE429B /* UIDiagonalCell */,
+				83A384791EAFBE4C00EE429B /* UIDiagonalView.swift */,
+				83A3847B1EAFBE6300EE429B /* UIDiagonalDelegate.swift */,
+			);
+			name = UIDiagonal;
+			sourceTree = "<group>";
+		};
+		83A384761EAFBDB600EE429B /* UIDiagonalCell */ = {
+			isa = PBXGroup;
+			children = (
+				83A384771EAFBDD500EE429B /* UIDigonalViewCell.swift */,
+			);
+			name = UIDiagonalCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A384691EAFBD8000EE429B /* ViewController.swift in Sources */,
+				83A384691EAFBD8000EE429B /* DiagonalTVShowViewController.swift in Sources */,
+				83A3847E1EAFBEE600EE429B /* TVShowItem.swift in Sources */,
+				83A384781EAFBDD500EE429B /* UIDigonalViewCell.swift in Sources */,
+				83A3847C1EAFBE6300EE429B /* UIDiagonalDelegate.swift in Sources */,
+				837405481EAFF78C002FD7D6 /* TVShowDetailsViewController.swift in Sources */,
 				83A384671EAFBD8000EE429B /* AppDelegate.swift in Sources */,
+				83A3847A1EAFBE4C00EE429B /* UIDiagonalView.swift in Sources */,
+				83A384801EAFCBFF00EE429B /* DiagonalTVShowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +332,7 @@
 				83A384741EAFBD8000EE429B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uYf-dK-pFv">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DiagonalTV Show View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DiagonalTVShowViewController" customModule="DiagonalCategory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +22,79 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Fol-Ww-Fe4"/>
+                    <connections>
+                        <segue destination="jW8-P0-EU9" kind="show" identifier="segueToShow" id="hVi-YD-iWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2183" y="71"/>
+        </scene>
+        <!--Show Details View Controller-->
+        <scene sceneID="ZWm-vs-nwS">
+            <objects>
+                <viewController id="jW8-P0-EU9" customClass="TVShowDetailsViewController" customModule="DiagonalCategory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFJ-f9-KdA"/>
+                        <viewControllerLayoutGuide type="bottom" id="9I8-Xw-L8W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9af-eJ-L4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diag_mariska" translatesAutoresizingMaskIntoConstraints="NO" id="WAs-PX-Dp6">
+                                <rect key="frame" x="0.0" y="145" width="400" height="935"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="Kts-DZ-dMZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diag_laworder_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cGG-Xq-ITY">
+                                <rect key="frame" x="710" y="476" width="500" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="wF8-jz-kvf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WAs-PX-Dp6" firstAttribute="top" secondItem="hFJ-f9-KdA" secondAttribute="bottom" id="5X0-x1-bE3"/>
+                            <constraint firstItem="WAs-PX-Dp6" firstAttribute="leading" secondItem="9af-eJ-L4Y" secondAttribute="leading" id="AAQ-Pm-KsB"/>
+                            <constraint firstItem="9I8-Xw-L8W" firstAttribute="top" secondItem="WAs-PX-Dp6" secondAttribute="bottom" id="C3P-eO-Y9r"/>
+                            <constraint firstItem="cGG-Xq-ITY" firstAttribute="top" secondItem="hFJ-f9-KdA" secondAttribute="bottom" constant="331" id="Cjo-f2-Bwt"/>
+                            <constraint firstItem="cGG-Xq-ITY" firstAttribute="centerX" secondItem="9af-eJ-L4Y" secondAttribute="centerX" id="kdi-fM-JhZ"/>
+                            <constraint firstItem="cGG-Xq-ITY" firstAttribute="centerY" secondItem="9af-eJ-L4Y" secondAttribute="centerY" id="rN6-eO-SYN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hero" destination="WAs-PX-Dp6" id="Qcs-Zr-t0x"/>
+                        <outlet property="logo" destination="cGG-Xq-ITY" id="2I0-5C-eu3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6n-QP-qig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4422" y="54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F1a-I7-Az2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uYf-dK-pFv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fCz-Nx-EqU">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cpT-Rz-iek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSC-bS-ahW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-116" y="71"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="diag_laworder_logo" width="250" height="250"/>
+        <image name="diag_mariska" width="500" height="700"/>
+    </resources>
 </document>
