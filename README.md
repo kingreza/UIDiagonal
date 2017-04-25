@@ -1,5 +1,5 @@
 # UIDiagonal
-UIDiagonal is a tvOS controller inspired by Hulu's tvOS splash screen. The user can select an item from the UIDiagonal collection using a Siri remote. 
+UIDiagonal is an interactive tvOS controller inspired by Hulu's tvOS splash screen. The user can select an item from the UIDiagonalView  using a Siri remote. 
 
 UIDiagonal uses the focus engine to navigate from one cell to another. 
 
